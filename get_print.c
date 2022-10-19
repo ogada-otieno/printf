@@ -1,8 +1,15 @@
 #include "main.h"
 
+/**
+ * get_print - function that checks the correct function to call
+ *
+ * @s: character representing the formatter
+ *
+ * Return: int
+ */
 int (*get_print(char s)) (va_list)
 {
-	
+
 	int specs = 4;
 	int i;
 
