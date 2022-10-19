@@ -10,14 +10,15 @@
 int (*get_print(char s)) (va_list)
 {
 
-	int specs = 4;
+	int specs = 5;
 	int i;
 
 	ph array_functions[] = {
 		{'c', print_char},
 		{'s', print_string},
 		{'d', print_int},
-		{'i', print_int}
+		{'i', print_int},
+		{'%', print_percent}
 	};
 
 	for (i = 0; i < specs; i++)
