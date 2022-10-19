@@ -4,6 +4,12 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+/**
+ * struct phandler - chooses the correct function to print
+ *
+ * @c: formatter
+ * @f: pointer to the correct function
+ */
 typedef struct phandler
 {
 	char c;

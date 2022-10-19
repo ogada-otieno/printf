@@ -1,8 +1,15 @@
 #include "main.h"
 
+/**
+ * _printf - prints aoutput according to a formatter
+ *
+ * @format: string containing the formatter
+ *
+ * Return: Len of printed out results
+ */
 int _printf(const char *format, ...)
 {
-	int (*pfunc) (va_list);
+	int (*pfunc)(va_list);
 	const char *p;
 	va_list args;
 
