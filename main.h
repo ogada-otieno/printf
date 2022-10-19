@@ -23,6 +23,7 @@ int (*get_print(char s))(va_list);
 int print_string(va_list vl);
 int print_char(va_list vl);
 int print_int(va_list vl);
+int print_percent(va_list vl);
 int count_digit(int i);
 void print_number(int n);
 
