@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_int - function to print integer
+ * @vl: parameter
+ * Return: success (res)
+ */
+
 int print_int(va_list vl)
 {
 	int n = va_arg(vl, int);
@@ -9,13 +15,18 @@ int print_int(va_list vl)
 	return (res);
 }
 
+/**
+ * print_number - function to print number
+ * @n: int
+ */
+
 void print_number(int n)
 {
 	unsigned int i;
 
-	if (n <0)
+	if (n < 0)
 	{
-		putchar ('-');
+		_putchar('-');
 		i = -n;
 	}
 	else
@@ -24,6 +35,12 @@ void print_number(int n)
 		print_number(i / 10);
 	_putchar((i % 10) + '0');
 }
+
+/**
+ * print_string - print string function
+ * @vl: parameter
+ * Return: Success
+ */
 
 int print_string(va_list vl)
 {
@@ -34,11 +51,23 @@ int print_string(va_list vl)
 	return (_puts(s));
 }
 
+/**
+ * print_char - function to print character
+ * @vl: parameter
+ * Return: 1
+ */
+
 int print_char(va_list vl)
 {
 	_putchar(va_arg(vl, int));
 	return (1);
 }
+
+/**
+ * count_digit - function
+ * @i: integer
+ * Return: Success
+ */
 
 int count_digit(int i)
 {

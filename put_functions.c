@@ -1,6 +1,12 @@
 #include "main.h"
 #include <unistd.h>
 
+/**
+ * _putchar - function for printing
+ * @c: character
+ * Return: Success
+ */
+
 int _putchar(char c)
 {
 	static char buf[1024];
@@ -18,6 +24,12 @@ int _putchar(char c)
 	}
 	return (1);
 }
+
+/**
+ * _puts - function
+ * @str: parameter
+ * Return: Success
+ */
 
 int _puts(char *str)
 {
