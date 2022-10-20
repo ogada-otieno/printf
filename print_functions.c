@@ -11,6 +11,8 @@ int print_int(va_list vl)
 	int n = va_arg(vl, int);
 	int res = count_digit(n);
 
+	if (n <= 0)
+		res++;
 	print_number(n);
 	return (res);
 }
